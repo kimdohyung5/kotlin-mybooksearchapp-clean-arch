@@ -5,8 +5,9 @@ import com.kimdo.mybooksearchapp.data.model.SearchResponse
 import com.kimdo.mybooksearchapp.data.repository.BookSearchRepository
 import kotlinx.coroutines.launch
 
-class BookSearchViewModel constructor( private val repository: BookSearchRepository
-, private val savedStateHandle: SavedStateHandle
+class BookSearchViewModel constructor(
+    private val repository: BookSearchRepository
+  , private val savedStateHandle: SavedStateHandle
 ): ViewModel() {
 
     private var _searchResult = MutableLiveData<SearchResponse>()
